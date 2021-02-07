@@ -12,7 +12,10 @@
         <link rel="stylesheet" href="assets/css/CV.css">
     </head>
     <!-- End Head -->
-    <body>
+    <body onload="myFunction()">
+        <div id="loading">
+            <div class="loader"></div>
+        </div>
         <div class="wrapper flex">
             <div class="side_bar">
                 <div class="avatar">
@@ -68,7 +71,7 @@
                                 <div class="flex-1">
                                     <span>HTML / CSS</span>
                                     <span class="progress-bar">
-                                        <span style="width: 80%;"></span>
+                                        <span style="width: 60%;"></span>
                                     </span>
                                 </div>
                             </li>
@@ -173,21 +176,41 @@
                         <span>My Project</span>
                     </div>
                     <div class="section-content">
-                        <div class="cv">
-                            <div class="cv-title">
-                                <h2>Lamborghini Shopping Web</h2>
-                            </div>
-                            <div class="cv-time">
-                                <span><i class="far fa-calendar-alt"></i>Aug 2019 - Dec 2019</span>
-                            </div>
-                            <div class="cv-content">
-                                <p>My University Project - Front-End Dev</p>
-                                <p>This website is created to clients for purchasing various items </br> relating to Lamborghini. Besides, to develop for more information, administrator could interfer with codes to replace the beneficial content in the website.</p>
-                                <p><span>Developed</span> with HTML, CSS, Bootstrap, MVC, .NET Core, SQL</p>
-                                <p>Github: https://github.com/hainamhuflit/DA1</p>
+                        <div class="module">
+                            <div class="cv">
+                                <div class="cv-title">
+                                    <h2>Lamborghini Shopping Web</h2>
+                                </div>
+                                <div class="cv-time">
+                                    <span><i class="far fa-calendar-alt"></i>Aug 2019 - Dec 2019</span>
+                                </div>
+                                <div class="cv-content">
+                                    <p>My University Project - Front-End Dev</p>
+                                    <p>This website is created to clients for purchasing various items </br> relating to Lamborghini. Besides, to develop for more information, administrator could interfer with codes to replace the beneficial content in the website.</p>
+                                    <p><span>Developed</span> with HTML, CSS, Bootstrap, MVC, .NET Core, SQL</p>
+                                    <p>Github: https://github.com/hainamhuflit/DA1</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="section-content">
+                        <div class="module space">
+                            <div class="cv">
+                                <div class="cv-title">
+                                    <h2>Landing Page Band</h2>
+                                </div>
+                                <div class="cv-time">
+                                    <span><i class="far fa-calendar-alt"></i>Aug 2019 - Dec 2019</span>
+                                </div>
+                                <div class="cv-content">
+                                    <p>Personal Project - Front-End Dev</p>
+                                    <p></p>
+                                    <p><span>Developed</span> with HTML, CSS</p>
+                                    <p>Github: </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
                 <!-- End Section3 -->
                 <div class="section">
@@ -202,6 +225,13 @@
                 </div>
                 <!-- End Section4 -->
             </div>
-        </div>           
+        </div>   
+        
+        <script>
+            var preloader = document.getElementById('loading')
+            function myFunction(){
+                preloader.style.display = 'none';
+            }
+        </script>
     </body>
 </html>
