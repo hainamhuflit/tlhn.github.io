@@ -114,7 +114,7 @@ body {
             .infor-title span {
                 font-weight: 600;
             }
-            .infor-content p {
+            .infor-content .about-content p {
                 color: #b3b3b3;
                 margin-bottom: 15px;
             }
@@ -146,21 +146,15 @@ body {
                     letter-spacing: 1.5px;
                     line-height: 32px;             
                 }
-                
-            .flex-1 {
-                flex: 1;
+            .tech-skills {
+                padding-left: 50px;
             }   
-            .progress-bar {
-                height: 5px;
-                background: #191919;
-                border-radius: 5px;
-                display: block;
-            }
-            .progress-bar span {
-                background: #e32879;
-                height: 5px;
-                border-radius: 5px;
-                display: block;
+            .per-skills {
+                padding-left: 50px;
+            }     
+            .infor-content p {
+                margin-bottom: 6px;
+                color: #b3b3b3;
             }
             .hobbies {
                 text-align: center;
